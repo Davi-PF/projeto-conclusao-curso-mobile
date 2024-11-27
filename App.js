@@ -19,6 +19,9 @@ import {UserProvider} from './src/contexts/UserContext';
 import {COLORS} from './src/constants/constants';
 import Toast, {BaseToast} from 'react-native-toast-message';
 
+import NotificationTab from './src/pages/NotificationTab/NotificationTab'
+import HeatmapPage from './src/pages/HeatmapPage/HeatmapPage'
+
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -49,6 +52,8 @@ export default function App() {
             <Stack.Screen name="ChangePassword" component={ChangePassword} />
             <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
             <Stack.Screen name="UserProfile" component={UserProfile} />
+            <Stack.Screen name="NotificationTab" component={NotificationTab} />
+            <Stack.Screen name="HeatmapPage" component={HeatmapPage} />
           </Stack.Navigator>
           <Header />
           <Footer />

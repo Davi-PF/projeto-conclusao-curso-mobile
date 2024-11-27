@@ -65,11 +65,12 @@ export default function Footer() {
             <Pressable
               style={styles.pressable}
               onPress={() => {
+                navigation.navigate("NotificationTab")
                 Keyboard.dismiss();
               }}>
               <FontAwesomeIcon
                 icon={faBell}
-                color={COLORS.WHITE}
+                color={currentScreen === 'NotificationTab' ? COLORS.YELLOW_MAIN : COLORS.WHITE}
                 style={styles.imageMiddle}
                 size={height * 0.04}
               />
